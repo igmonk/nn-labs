@@ -22,7 +22,7 @@ function plotDecisionBoundary2(theta, X, y)
 
     % Legend, specific for the exercise
     legend('Class 1', 'Class 2', 'Class 3', 'Class 4', 'Decision Boundary');
-    axis([30, 100, 30, 100]);
+    axis([0, 100, 0, 100]);
   else
     % Here is the grid range
     u = linspace(-1, 1.5, 50);
