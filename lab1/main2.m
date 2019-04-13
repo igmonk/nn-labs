@@ -46,6 +46,21 @@ for i=1:m
   yVec(i, :) = (yRange == y(i));
 endfor;
 
+%yVec = [
+%  0 0.001
+%  0 0.001
+%  0 0.001
+%  0 1
+%  0 1
+%  0 1
+%  1 0
+%  1 0
+%  1 0
+%  1 1
+%  1 1
+%  1 1
+%];
+
 options = optimset('GradObj', 'on', 'MaxIter', 400);
 [theta, cost] = ...
   fminunc(@(t)(costFunction(t, X, yVec)), initial_theta, options);
